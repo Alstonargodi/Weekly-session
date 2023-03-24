@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weatherapp</string>
+    <string name="temperature">%1$s c</string>
+    <string name="humidty">%1$s p</string>
+    <string name="windspeed">%1$s km/h</string>
+    <string name="visibilty">%1$s m</string>
+</resources>
