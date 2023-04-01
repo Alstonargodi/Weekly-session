@@ -1,11 +1,11 @@
-package com.example.weatherapp.presentasion.detailweather
+package com.example.weatherapp.presentasion.detailweather.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.weatherapp.databinding.ItemForecastBinding
-import com.example.weatherapp.model.response.forecastItem
+import com.example.weatherapp.model.remote.response.forecastItem
 
 class ForecastAdapter(
     private val listData : List<forecastItem>

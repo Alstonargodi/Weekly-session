@@ -7,6 +7,7 @@
     tools:context=".presentasion.home.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_favoriteWeather"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,4 +25,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/empty"
+        layout="@layout/empty_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rv_favoriteWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_favoriteWeather" />
+
+    <include
+        android:id="@+id/problem"
+        layout="@layout/error_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_favoriteWeather"
+        app:layout_constraintEnd_toEndOf="@+id/rv_favoriteWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_favoriteWeather" />
+
+    <include
+        android:id="@+id/wait"
+        layout="@layout/wait_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_favoriteWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_favoriteWeather" />
 </androidx.constraintlayout.widget.ConstraintLayout>

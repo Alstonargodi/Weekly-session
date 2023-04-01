@@ -1,8 +1,8 @@
-package com.example.weatherapp.model.apiconfig
+package com.example.weatherapp.model.remote.apiconfig
 
 import com.example.weatherapp.BuildConfig
-import com.example.weatherapp.model.apiservice.ApiService
-import com.example.weatherapp.model.utils.Utils
+import com.example.weatherapp.model.remote.apiservice.ApiService
+import com.example.weatherapp.model.remote.utils.Utils
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -4,4 +4,5 @@
     <string name="humidty">%1$s p</string>
     <string name="windspeed">%1$s km/h</string>
     <string name="visibilty">%1$s m</string>
+    <string name="set_as_favorite">Set %1$s as favorite</string>
 </resources>

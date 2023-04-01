@@ -1,11 +1,14 @@
 package com.example.weatherapp.injection
 
 import android.content.Context
-import com.example.weatherapp.model.Repository
-import com.example.weatherapp.model.apiconfig.ApiConfig
+import com.example.weatherapp.repository.Repository
+import com.example.weatherapp.model.remote.apiconfig.ApiConfig
 
 object Injection {
-    fun provideRemoteRespoitory(): Repository{
-        return Repository(ApiConfig.apiConfig())
+    fun provideRemoteRespoitory(context: Context): Repository {
+        return Repository(
+            ApiConfig.apiConfig(),
+            context
+        )
     }
 }

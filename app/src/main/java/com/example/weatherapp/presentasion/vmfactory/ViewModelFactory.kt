@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.weatherapp.injection.Injection
-import com.example.weatherapp.model.Repository
-import com.example.weatherapp.presentasion.detailweather.DetailWeatherViewModel
+import com.example.weatherapp.repository.Repository
+import com.example.weatherapp.presentasion.detailweather.viewmodel.DetailWeatherViewModel
 import com.example.weatherapp.presentasion.home.MainActivityViewModel
 
 class ViewModelFactory private constructor(
@@ -28,10 +28,10 @@ class ViewModelFactory private constructor(
     companion object{
         @Volatile
         private var instance : ViewModelFactory? = null
-        fun getInstance(): ViewModelFactory =
+        fun getInstance(context: Context): ViewModelFactory =
             instance ?: synchronized(this){
                 instance ?: ViewModelFactory(
-                    Injection.provideRemoteRespoitory()
+                    Injection.provideRemoteRespoitory(context)
                 )
             }.also { instance = it }
     }

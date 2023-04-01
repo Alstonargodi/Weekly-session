@@ -1,4 +1,4 @@
-package com.example.weatherapp.model.utils
+package com.example.weatherapp.model.remote.utils
 
 
 sealed class ResultRespon <out R> private constructor(){
